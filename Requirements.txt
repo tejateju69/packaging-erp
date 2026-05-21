@@ -1,0 +1,21 @@
+Frontend:
+- React
+- Vite
+- Tailwind CSS
+- Axios
+- React Router DOM
+- SweetAlert2
+- Lucide React
+- jsPDF
+- jspdf-autotable
+
+Backend:
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- dotenv
+- cors
+- bcryptjs
+- jsonwebtoken
+- nodemon
