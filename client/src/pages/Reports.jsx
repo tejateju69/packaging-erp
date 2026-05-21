@@ -95,7 +95,7 @@ const fetchReportsData = async () => {
 
     const reelsResponse = await axios.get(
 
-      "http://127.0.0.1:8000/api/reels"
+      "https://sp-packaging.onrender.com/api/reels"
 
     )
 
@@ -105,7 +105,7 @@ const fetchReportsData = async () => {
 
     const savedItemsResponse = await axios.get(
 
-      "http://127.0.0.1:8000/api/saved-items"
+      "https://sp-packaging.onrender.com/api/saved-items"
 
     )
 

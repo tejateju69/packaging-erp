@@ -71,7 +71,7 @@ useEffect(() => {
 
   await axios.post(
 
-    "http://127.0.0.1:8000/api/reels",
+    "https://sp-packaging.onrender.com/api/reels",
 
     {
 
@@ -123,7 +123,7 @@ const handleAddMultipleReels = async () => {
 
     try {
       for (const weight of weightsArray) {
-        await axios.post("http://127.0.0.1:8000/api/reels", {
+        await axios.post("https://sp-packaging.onrender.com/api/reels", {
           reelSize: Number(size),
           gsm: Number(gsm),
           bf: Number(bf),
@@ -142,7 +142,7 @@ const handleAddMultipleReels = async () => {
 // ✅ now handleDeleteReel is its own standalone function
 const handleDeleteReel = async (id) => {
   try {
-    await axios.delete(`http://127.0.0.1:8000/api/reels/${id}`)
+    await axios.delete(`https://sp-packaging.onrender.com/api/reels/${id}`)
     fetchReels()
   } catch (error) {
     console.log(error)
@@ -184,7 +184,7 @@ const handleDeleteSelected = async () => {
 
       await axios.delete(
 
-        `http://127.0.0.1:8000/api/reels/${id}`
+        `https://sp-packaging.onrender.com/api/reels/${id}`
 
       )
 
@@ -344,7 +344,7 @@ const fetchReels = async () => {
 
     const response = await axios.get(
 
-      "http://127.0.0.1:8000/api/reels"
+      "https://sp-packaging.onrender.com/api/reels"
 
     )
 

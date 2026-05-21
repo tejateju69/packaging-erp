@@ -18,7 +18,7 @@ export default function SavedItems() {
 
     await axios.delete(
 
-      `http://127.0.0.1:8000/api/saved-items/${id}`
+      `https://sp-packaging.onrender.com/api/saved-items/${id}`
 
     )
 
@@ -40,7 +40,7 @@ const fetchSavedItems = async () => {
 
     const response = await axios.get(
 
-      "http://127.0.0.1:8000/api/saved-items"
+      "https://sp-packaging.onrender.com/api/saved-items"
 
     )
 

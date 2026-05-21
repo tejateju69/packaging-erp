@@ -93,7 +93,7 @@ if (isNaN(totalBoxes) || totalBoxes <= 0) {
     // FETCH REELS
     let reelsData = []
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/reels")
+      const response = await axios.get("https://sp-packaging.onrender.com/api/reels")
       reelsData = response.data
       setAvailableReels(reelsData)
     } catch (error) {
@@ -991,7 +991,7 @@ reels: matchingReels,
 const fetchReels = async () => {
   try {
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/reels"
+      "https://sp-packaging.onrender.com/api/reels"
     )
     console.log("Fetched reels:", response.data)
     setAvailableReels(response.data)
@@ -1007,7 +1007,7 @@ const fetchMatchingReels = async (deckle) => {
 
     const response = await axios.get(
 
-      "http://127.0.0.1:8000/api/reels"
+      "https://sp-packaging.onrender.com/api/reels"
 
     )
 
@@ -1608,7 +1608,7 @@ ${item.weight.total}`
 
   await axios.post(
 
-    "http://127.0.0.1:8000/api/saved-items",
+    "https://sp-packaging.onrender.com/api/saved-items",
 
     {
 
